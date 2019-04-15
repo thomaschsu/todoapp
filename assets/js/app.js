@@ -30,6 +30,6 @@ $('#notearea').hover(function(){
 });
 
 // Note section on click add class
-$('input[type="text"]').on('click', function(){
+$('input[type="text"]').on('focus', function(){
     $(this).addClass('expand');
 });

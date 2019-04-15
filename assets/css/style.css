@@ -14,11 +14,14 @@ input {
     padding: 0px 10px;
     color: #455A64;
     outline: none;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
 }
 
 li {
     height: 40px;
     line-height: 40px;
+    letter-spacing: .015em;
 }
 
 li:nth-child(2n) {
