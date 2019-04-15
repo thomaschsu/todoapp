@@ -1,14 +1,23 @@
 // Check off specific todos by clicking on them
-$('li').on('click', function(){
+$('ul').on('click', 'li', function(){
     $(this).toggleClass('complete');
 });
 
 // Click on X to delete todo
-$('span').on('click', function(event){
+$('ul').on('click', 'span', function(event){
     $(this).parent().fadeOut(500, function(){
         // After fade out is done, remove the element
         $(this).remove();
     });
     // Stop from bubbling up to other elements
     event.stopPropagation();
+});
+
+// Function for input
+$('input[type="text"]').keypress(function(event){
+    if(event.which === 13) {
+        let toDo = $(this).val();
+        $(this).val('');
+        $('ul').append('<li><span>X</span> ' + toDo + '</li>');
+    }
 });
