@@ -25,7 +25,7 @@
         </form>
     </nav>
     <div class="container text-center mt-5">
-        <input type="text" placeholder="Take a note...">
+        <input type="text" placeholder="Take a note..." onfocus="this.placeholder = 'Press enter when finished...'" onblur="this.placeholder = 'Take a note...'">
     </div>
     <div id="notearea">
         <h3 class="title">Things to Do</h3>
@@ -37,7 +37,7 @@
     </div>
     <div id="hints" class="container">
         <p id="hint1">
-            &#9679; Add items to your note area by typing into the input area.
+            &#9679; Add items to your note area by typing into the input and pressing enter.
         </p>
         <p id="hint2">
             &#9679; Check off finished todos by clicking on them.
