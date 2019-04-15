@@ -23,7 +23,7 @@ $('input[type="text"]').keypress(function(event){
 });
 
 // Mouse over to-do list hover class
-$('#container').hover(function(){
+$('#notearea').hover(function(){
     $(this).addClass('hover');
 }, function() {
     $(this).removeClass('hover');

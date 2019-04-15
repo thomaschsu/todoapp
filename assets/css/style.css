@@ -2,12 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#container {
-    margin: 15% auto;
-    width: 450px;
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
+ul {
+    list-style: none;
 }
 
 .complete {
@@ -20,6 +16,20 @@ body {
     transition: all .45s;
 }
 
-ul {
-    list-style: none;
+.fa-book-open {
+    color: #f4b607;
+}
+
+#notearea {
+    margin: 15% auto;
+    width: 450px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input {
+    width: 50%;
+    height: 40px;
+    padding: 0px 10px;
 }
