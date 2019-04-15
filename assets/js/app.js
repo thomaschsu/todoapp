@@ -33,8 +33,3 @@ $('#notearea').hover(function(){
 $('input[type="text"]').on('click', function(){
     $(this).addClass('expand');
 });
-
-// // Click anywhere outside of input, remove class expand
-// $('body').on('click', function() {
-//     $('input[type="text"]').removeClass('expand');
-// });
