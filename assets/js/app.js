@@ -21,3 +21,10 @@ $('input[type="text"]').keypress(function(event){
         $('ul').append('<li><span>X</span> ' + toDo + '</li>');
     }
 });
+
+// Mouse over to-do list hover class
+$('#container').hover(function(){
+    $(this).addClass('hover');
+}, function() {
+    $(this).removeClass('hover');
+});
