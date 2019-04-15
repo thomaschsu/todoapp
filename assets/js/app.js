@@ -38,3 +38,8 @@ $('input[type="text"]').on('focusin', function(){
 $('input[type="text"]').on('focusout', function () {
     $(this).addClass('reduce').removeClass('expand');
 });
+
+// Fade in hints
+$('#hint1').hide().fadeIn(1000);
+$('#hint2').hide().fadeIn(1000);
+$('#hint3').hide().fadeIn(1000);

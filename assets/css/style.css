@@ -103,3 +103,9 @@ li:hover span {
     border-radius: 8px;
     background-color: #FFF;
 }
+
+#hints {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+}
