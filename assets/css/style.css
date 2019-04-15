@@ -22,6 +22,7 @@ li {
     height: 40px;
     line-height: 40px;
     letter-spacing: .015em;
+    cursor: pointer;
 }
 
 li:nth-child(2n) {
@@ -39,7 +40,7 @@ span {
     opacity: 0;
 }
 
-li:hover span{
+li:hover span {
     width: 40px;
     transition: all .45s;
     opacity: 1;
