@@ -29,7 +29,14 @@ $('#notearea').hover(function(){
     $(this).removeClass('hover');
 });
 
-// Note section on click add class
-$('input[type="text"]').on('focus', function(){
+// Note section on focus add class
+$('input[type="text"]').on('focusin', function(){
+    $(this).removeClass('reduce');
     $(this).addClass('expand');
+});
+
+// Note section on focus remove class
+$('input[type="text"]').on('focusout', function () {
+    $(this).addClass('reduce');
+    $(this).removeClass('expand');
 });

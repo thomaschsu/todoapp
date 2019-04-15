@@ -77,6 +77,13 @@ li:hover span {
     border: 2px solid #455A64;
 }
 
+.reduce {
+    width: 50%;
+    height: 40px;
+    padding: 0px 10px;
+    transition: all .45s;
+}
+
 .fa-book-open {
     color: #f4b607;
     margin-right: 15px;
