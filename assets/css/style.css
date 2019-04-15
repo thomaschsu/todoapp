@@ -6,6 +6,14 @@ ul {
     list-style: none;
 }
 
+input {
+    width: 50%;
+    height: 40px;
+    padding: 0px 10px;
+    color: #455A64;
+    outline: none;
+}
+
 .complete {
     color: #5f6368;
     text-decoration: line-through;
@@ -16,8 +24,21 @@ ul {
     transition: all .45s;
 }
 
+.expand {
+    width: 60%;
+    height: 50px;
+    padding: 0px 15px;
+    transition: all .45s;
+    border: 2px solid #455A64;
+}
+
 .fa-book-open {
     color: #f4b607;
+    margin-right: 15px;
+}
+
+.navbar {
+    background-color: #455A64;
 }
 
 #notearea {
@@ -26,10 +47,4 @@ ul {
     border: 1px solid #e0e0e0;
     padding: 20px;
     border-radius: 8px;
-}
-
-input {
-    width: 50%;
-    height: 40px;
-    padding: 0px 10px;
 }
