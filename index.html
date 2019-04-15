@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Note Application</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script type="text/javascript" src="assets/js/lib/jquery-3.4.0.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar text-white">
-            <a class="navbar-brand"><i class="fas fa-book-open"></i>Note App</a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
-        <div class="container text-center mt-5">
-            <input type="text" placeholder="Take a note...">
-        </div>
-        <div id="notearea">
-            <h3 class="title">Things to Do</h3>
-            <ul>
-                <li><span><i class="fas fa-trash"></i></span> Workout</li>
-                <li><span><i class="fas fa-trash"></i></span> Exercise</li>
-                <li><span><i class="fas fa-trash"></i></span> Run</li>
-            </ul>
-        </div>
-        <script type="text/javascript" src="assets/js/app.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Note Application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="assets/js/lib/jquery-3.4.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar text-white">
+        <a class="navbar-brand"><i class="fas fa-book-open"></i>Note App</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="container text-center mt-5">
+        <input type="text" placeholder="Take a note...">
+    </div>
+    <div id="notearea">
+        <h3 class="title">Things to Do</h3>
+        <ul>
+            <li><span><i class="fas fa-trash"></i></span> Exercise</li>
+            <li><span><i class="fas fa-trash"></i></span> Play Video Games</li>
+            <li><span><i class="fas fa-trash"></i></span> Walk Dog</li>
+        </ul>
+    </div>
+    <div id="hints" class="container">
+        <p>
+            &#9679; Add items to your note area by typing into the input area.
+        </p>
+        <p>
+            &#9679; Check off finished todos by clicking on them.
+        </p>
+        <p>
+            &#9679; Delete by hovering over the todo and selecting the trash icon.
+        </p>
+
+    </div>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
 </html>
