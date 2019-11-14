@@ -1,45 +1,30 @@
-// Check off specific todos by clicking on them
-$('ul').on('click', 'li', function(){
-    $(this).toggleClass('complete');
-});
+const lis = document.querySelectorAll('#notearea li');
+const spans = document.querySelectorAll('#notearea span');
+const input = document.querySelector('input[type="text"]');
+const ul = document.querySelector('ul');
+const noteArea = document.getElementById('notearea');
 
-// Click on X to delete todo
-$('ul').on('click', 'span', function(event){
-    $(this).parent().fadeOut(500, function(){
-        // After fade out is done, remove the element
-        $(this).remove();
-    });
-    // Stop from bubbling up to other elements
-    event.stopPropagation();
-});
-
-// Function for input
-$('input[type="text"]').keypress(function(event){
-    if(event.which === 13) {
-        let toDo = $(this).val();
-        $(this).val('');
-        $('ul').append('<li><span><i class="fas fa-trash"></i></span> ' + toDo + '</li>');
+// Used event delegation so that dynamic content would still work
+ul.addEventListener('click', (e) => {
+    if(e.target.classList.contains('remove-item')) {
+        e.target.parentElement.remove();
+    } else if (e.target.classList.contains('fa-trash')) {
+        e.target.parentElement.parentElement.remove();
+    } else if (e.target.classList.contains('li-item')) {
+        e.target.classList.toggle('complete');
     }
-});
+})
 
-// Mouse over to-do list hover class
-$('#notearea').hover(function(){
-    $(this).addClass('hover');
-}, function() {
-    $(this).removeClass('hover');
-});
-
-// Note section on focus add class
-$('input[type="text"]').on('focusin', function(){
-    $(this).removeClass('reduce').addClass('expand');
-});
-
-// Note section on focus remove class
-$('input[type="text"]').on('focusout', function () {
-    $(this).addClass('reduce').removeClass('expand');
-});
-
-// Fade in hints
-$('#hint1').hide().fadeIn(1000);
-$('#hint2').hide().fadeIn(1000);
-$('#hint3').hide().fadeIn(1000);
+// Pressing enter while in input will allow you to add list item to the todo
+input.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+        let toDo = input.value;
+        let li = document.createElement('li');
+        li.classList.add('li-item');
+        let textNode = document.createTextNode(toDo);
+        li.innerHTML = '<span class="remove-item"><i class="fas fa-trash"></i></span>';
+        li.appendChild(textNode);
+        ul.appendChild(li);
+        input.value = '';
+    }
+})

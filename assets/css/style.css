@@ -23,6 +23,21 @@ input {
     border: 1px solid #e0e0e0;
 }
 
+input:focus {
+    width: 60%;
+    height: 50px;
+    padding: 0px 15px;
+    transition: all .45s;
+    border: 2px solid #455A64;
+}
+
+input:not(:focus) {
+    width: 50%;
+    height: 40px;
+    padding: 0px 10px;
+    transition: all .45s;
+}
+
 li {
     height: 40px;
     line-height: 40px;
@@ -102,6 +117,11 @@ li:hover span {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #FFF;
+}
+
+#notearea:hover {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    transition: all .45s;
 }
 
 #hints {
